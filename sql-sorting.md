@@ -11,12 +11,14 @@ namespace App\Traits;
 
 trait SortTrait
 {
-    public function scopeSort($query, $sort)
+    public function scopeSort($query, $sort = null, $defaultColumn = 'id')
     {
-        $query->when($sort ?? false, function ($query, $sort) {
+        $query->when($sort, function ($query, $sort) {
             $column = trim($sort, '-');
             $direction = str_starts_with($sort, '-') ? 'desc' : 'asc';
             $query->orderBy($column, $direction);
+        }, function ($query) use ($defaultColumn) {
+            $query->orderByDesc($defaultColumn);
         });
     }
 }
