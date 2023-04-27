@@ -1,5 +1,5 @@
-# Laravel Collections
+# Code Snippet
 
-## Table List
+## Laravel
 
 - [Sorting Trait](./sorting.md)
