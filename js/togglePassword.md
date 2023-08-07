@@ -4,6 +4,8 @@ The function to toggle password. Just only need tailwindcss. No need other depen
 
 ## Demo
 
+![image](https://github.com/tmh-rc/code-snippet/assets/59432845/f022e70f-ea9e-49b8-910d-2060f6b520d2)
+
 ## Dependencies
 
 [Tailwind CSS](https://tailwindcss.com/)
